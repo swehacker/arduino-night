@@ -1,5 +1,5 @@
-# Serial Communication between Arduino and Computer
+# Serial Communication
 
 ## Links
-[Serial Reference](https://www.arduino.cc/en/Reference/Serial)
-[Serial Communication Tutorials](http://playground.arduino.cc/Main/InterfacingWithHardware#Communication)
+- [Serial Reference](https://www.arduino.cc/en/Reference/Serial)
+- [Serial Communication Tutorials](http://playground.arduino.cc/Main/InterfacingWithHardware#Communication)
