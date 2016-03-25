@@ -11,7 +11,7 @@
 #define maximumDistance 200
 #define minimumDistance 0
 
-long duration, distance;
+float duration, distance;
 
 void setup() {
   // Set serial port to use 9600 bauds
