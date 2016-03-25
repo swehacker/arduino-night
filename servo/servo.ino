@@ -6,6 +6,7 @@ void setup() {
 }
 
 void loop() {
+  // Loop between 1050-1950 so that we dont accidentaly go too far.
   for (; uSeconds <= 1950; uSeconds+=20) {
     sweep();
   }
@@ -19,6 +20,7 @@ void sweep() {
   digitalWrite(pwmPin, HIGH);
   delayMicroseconds(uSeconds);
   digitalWrite(pwmPin, LOW);
+  // Currently the largest most accurate delay is 16383us (which is close enough)
   delayMicroseconds(17383-uSeconds);
 }
 

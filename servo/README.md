@@ -6,6 +6,14 @@ The servo is controlled by pulses, which it should receive roughly every 20 mill
 
 ![Servo ](https://learn.adafruit.com/system/assets/assets/000/002/313/medium800/learn_arduino_servos.png?1396781670 "Image linked from Adafruit")
 
+## The LAB
+Connect our servo to the arduino.
+![Breadboard](servo_bb.png)
+
+The next step is to figure out the program.
+We need to go high for 1000-2000 microseconds and go low until next pulse starts after 20 microseconds (with the full length).
+It's a good idea not to go the whole 180 degrees, not all servos are created equal and may break, so try to stay between 1050 - 1950 microseconds.
+
 Our example should produce pulses between 1050 - 1950 like this:
 ![Servo in almost -90 degrees](1140us.png)
 
