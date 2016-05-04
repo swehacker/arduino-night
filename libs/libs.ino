@@ -1,11 +1,18 @@
 #include <Wire.h>
 #include <SparkFunTSL2561.h>
-#include <Adafruit_Sensor.h>
 
 SFE_TSL2561 light;
 boolean gain;     // Gain setting, 0 = X1, 1 = X16;
 unsigned int ms;  // Integration ("shutter") time in milliseconds
 
+/*
+ Lux sensor
+ 4-in-1 Sensor Strinity Cobber v0.1
+ VCC to arduino 5V
+ GND to arduino GNG
+ SDA to arduino SDA
+ SCL to arduino SCL
+*/
 void setup() {
 
     Serial.begin(9600);
